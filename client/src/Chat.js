@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import ScrollToBottom from "react-scroll-to-bottom";
-export default function Chat({socket, userName, room}) {
+export default function Chat({socket, userName, room, exitRoom}) {
   const [currentMess, setCurrentMess] = useState('')
   const [listMess, setListMess] = useState([])
   const [focus, setFocus] = useState(false)
@@ -54,6 +54,7 @@ export default function Chat({socket, userName, room}) {
             />
             <button onClick={sendMess}><span className="material-symbols-outlined">send</span></button>
         </div>
+        <button className='btn-exit' onClick={exitRoom}>Rời phòng</button>
     </div>
   )
 }

@@ -13,6 +13,9 @@ function App() {
       setShowChat(true)
     }
   }
+  const exitRoom = () => {
+    setShowChat(false)
+  }
   return (
     <div className="App">
       {showChat === false ? 
@@ -23,7 +26,7 @@ function App() {
         <button onClick={joinRoom}>Vào phòng</button>
       </div>
       :
-      <Chat socket={socket} userName={userName} room={room}></Chat>
+      <Chat socket={socket} userName={userName} room={room} exitRoom={exitRoom}></Chat>
       }
       </div>
 

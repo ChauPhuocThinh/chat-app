@@ -222,3 +222,19 @@ svg{
 .message-container *::-webkit-scrollbar-thumb:active {
   background-color: #2978a2;
 }
+.btn-exit{
+  margin-top: 40px;
+    float: right;
+    background-color: #b10f2e;
+    color: #ffff;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+}
+.btn-exit:hover{
+  background-color: #9e1830
+}
+.btn-exit:active{
+  background-color: #87142a;
+}
